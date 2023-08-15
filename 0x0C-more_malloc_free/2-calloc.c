@@ -4,7 +4,7 @@
 /**
  * *_memset - fills memory
  * @s: memory area
- * @b: char 
+ * @b: char
  * @n: numb
  *
  * Return: pointer

@@ -3,7 +3,7 @@
 
 /**
  * *string_nconcat - concatenates n byte
- * @s1: string 
+ * @s1: string
  * @s2: st
  * @n: number of bytes from s2 to sa1
  *

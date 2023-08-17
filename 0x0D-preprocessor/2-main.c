@@ -1,10 +1,11 @@
 #include<stdio.h>
 
-/**func - print name of file
+/**
+ * main - print name of file
  * return 0
  */
-int func(void)
+int main()
 {
-	printf('%s/n',__FILE__);
-	return(0);
+	printf("%s\n", __FILE__);
+	return (0);
 }

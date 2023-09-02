@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * binary_to_unit - convert funcions
@@ -12,12 +10,16 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	if (b == NULL)
+	if (!b)
 		return (0);
 
-	unsigned int result = 0;
+	int i;
+	unsigned int result;
 
-	for (int i = 0; b[i] != '\0'; i++)
+	result = 0;
+	i = 0;
+
+	while (b[i] != '\0')
 	{
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
@@ -26,6 +28,7 @@ unsigned int binary_to_uint(const char *b)
 
 		if (b[i] == '1')
 			result += 1;
+	i++;	
 	}
 	return (result);
 }
